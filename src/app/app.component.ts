@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-ng-project';
+
+  featureSelected: string;
+
+  onFeatureSelect(event: string) {
+    this.featureSelected = event;
+  }
+
 }
