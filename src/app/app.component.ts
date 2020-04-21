@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  featureSelected: string;
-
-  onFeatureSelect(event: string) {
-    this.featureSelected = event;
-  }
-
 }

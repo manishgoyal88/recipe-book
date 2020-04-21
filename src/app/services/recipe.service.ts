@@ -11,6 +11,7 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
+      0,
       'Test Recipe 1',
       'This is a Test Recipe 1',
       'https://cdn.pixabay.com/photo/2016/12/10/21/26/food-1898194_1280.jpg',
@@ -21,6 +22,7 @@ export class RecipeService {
       ]
     ),
     new Recipe(
+      1,
       'Test Recipe 2',
       'This is a Test Recipe 2',
       'https://cdn.pixabay.com/photo/2016/08/01/16/18/raspberries-1561457__480.jpg',
@@ -35,4 +37,7 @@ export class RecipeService {
     return this.recipes.slice();
   }
 
+  public getRecipeById(id: number) {
+    return this.recipes[id];
+  }
 }
